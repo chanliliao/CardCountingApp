@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/d2ef857245.js" crossorigin="anonymous"></script> 
+  </head>
+
+    <!--Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Card Counting App</title>
+  </head>
+  <body>
+    <div class="game-space">
+      <div class="title">
+        <h1>Card Counting App</h1>
+      </div>  
+    <div class="grid">
+      <div class="setting-panel">
+        <div class="settings">
+          <button class="btn" id="new-game">
+            <i class="fas fa-plus-square"></i> New Practice
+          </button>
+          <input type="text" placeholder="Deal Speed (1-5)" name="Deal Speed" id="deal-speed" />
+          <input type="text" placeholder="Amount of Decks (1-8)" name="number of Decks" id="amount-of-decks" />
+          <button class="btn" id="start-game">
+            <i class="fas fa-plus-square"></i> Start Practice
+          </button>
+        </div>
+      </div> 
+      <div class="game-panel">
+        <div class="table">
+          <img src="cards/blue_back.jpg" alt="next card" class="card" id="next-card"/>
+          <img src="cards/10C.jpg" alt="Card" class= "card" id="current-card" />
+       </div>
+       <div class="info-field">
+          <div id="info">
+            <h5># of Decks Left: <span id="decks-left">5</span></h5>
+          </div>
+          <div class="user-input">
+            <input type="text" placeholder="Your Count" name="count" id="count" />
+            <button class="submit" id="submit-stop">Submit
+              </button>
+            <h5 id="actual-count">Running Count: 12</h5>
+            <div id="result">Correct!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!--JS-->
+    <script src="pp.js"></script>
+  </body>
+</html>
+
+
